@@ -1,83 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>António Mucavele - Portfólio</title>
-
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#e8edf3; color:#333; }
-    header { background:#0077c2; padding:18px; text-align:center; color:#fff; }
-    nav a { margin:0 15px; color:#fff; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    section { padding:40px 20px; max-width:900px; margin:auto; }
-    
-    .hero { text-align:center; background:white; padding:60px 20px; margin-top:30px; 
-            border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.1);}
-    .hero h2 { font-size:32px; color:#0077c2; }
-    .hero p { font-size:18px; }
-
-    #sobre, #contacto { background:white; margin-top:30px; border-radius:10px;
-                        box-shadow:0 0 15px rgba(0,0,0,0.1);}
-    #sobre h2, #galeria h2, #contacto h2 { color:#0077c2; }
-
-    .galeria { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; padding:20px; }
-    .galeria img { width:280px; border-radius:10px; transition:.4s; }
-    .galeria img:hover { transform:scale(1.05); }
-
-    footer { background:#003b63; color:white; text-align:center; padding:20px; margin-top:40px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Booking - Marcação de Eventos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0a0a0a; color: #fff; }
+    header { background: #111; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+    .hero { background: url('https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat; height: 70vh; display: flex; justify-content: center; align-items: center; text-align: center; }
+    .hero h1 { font-size: 48px; text-shadow: 0 0 15px #000; }
+    .section { padding: 40px 20px; text-align: center; }
+    form { max-width: 400px; margin: auto; background: #111; padding: 20px; border-radius: 10px; }
+    input, select, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; }
+    button { background: #e60000; color: #fff; padding: 12px; width: 100%; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #ff1a1a; }
+    footer { background: #111; text-align: center; padding: 20px; margin-top: 20px; }
+  </style>
 </head>
 <body>
+  <header>DJ Mucavele — Reservas & Eventos</header>
 
-<header>
-    <h1>António Mucavele</h1>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+  <div class="hero">
+    <h1>Contrate DJ Profissional Para Seu Evento</h1>
+  </div>
 
-<section id="inicio" class="hero">
-    <h2>Olá, eu sou o António </h2>
-    <p>Estudante e apaixonado por tecnologia e desenvolvimento web.</p>
-    <p>Este site é parte do meu progresso e aprendizagem em Programação Web.</p>
-</section>
+  <div class="section">
+    <h2>Faça Sua Marcação</h2>
+    <p>Preencha o formulário abaixo para reservar DJ ou sistema de som para festas.</p>
 
-<section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Chamo-me <strong>António Mucavele</strong>, jovem com interesse na área de informática e
-       desenvolvimento de websites. Gosto de aprender novas tecnologias e criar soluções que
-       facilitem a vida das pessoas e promovam inovação.</p>
-    
-    <p>Este projeto representa um dos muitos passos que estou a dar no mundo digital.
-       Simples, objetivo e funcional — assim como desejo que seja o meu futuro profissional.</p>
-</section>
-<section id="galeria">
-    <h2>Galeria</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1581093588401-22f8b4c2a8c4?auto=format&fit=crop&w=800&q=80" alt="Programação e código">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Tecnologia e futuro">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Desenvolvimento web">
-        <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80" alt="Código HTML e CSS">
-        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Tecnologia digital">
-        <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80" alt="Design UI e sistemas">
-    </div>
-</section>
+    <form>
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="tel" placeholder="Contacto (WhatsApp)" required>
+      <input type="date" required>
+      <select required>
+        <option value="DJ">DJ</option>
+        <option value="Som">Som</option>
+        <option value="DJ+Som">DJ + Som Completo</option>
+      </select>
+      <textarea rows="4" placeholder="Detalhes do Evento"></textarea>
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </div>
 
-
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p><strong>Nome:</strong> António Mucavele</p>
-    <p><strong>Telefone:</strong> +258 878 362 317</p>
-    <p><strong>Email:</strong> tonnymuca27@gmail.com</p>
-</section>
-
-<footer>
-    <p>© 2025 - Desenvolvido por António Mucavele. Todos direitos reservados.</p>
-</footer>
-
+  <footer>
+    © 2025 DJ Mucavele — Todos direitos reservados.
+  </footer>
 </body>
 </html>
